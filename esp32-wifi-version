@@ -6,8 +6,8 @@
 #include "fb_gfx.h"
 #include "fd_forward.h"
 
-const char* ssid = "NSA HONEYPOT";
-const char* password = "only4andrew";
+const char* ssid = "NSA";
+const char* password = "orange";
 
 // Arduino like analogWrite
 // value has to be between 0 and valueMax
