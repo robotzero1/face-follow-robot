@@ -9,17 +9,6 @@
 const char* ssid = "NSA";
 const char* password = "orange";
 
-// Arduino like analogWrite
-// value has to be between 0 and valueMax
-void ledcAnalogWrite(uint8_t channel, uint32_t value, uint32_t valueMax = 180)
-{
-  // calculate duty, 8191 from 2 ^ 13 - 1
-  uint32_t duty = (8191 / valueMax) * min(value, valueMax);
-  ledcWrite(channel, duty);
-}
-int pan_center = 90; // center the pan servo
-int tilt_center = 90; // center the tilt servo
-
 // for averaging the distance result
 // Define the number of samples to keep track of. The higher the number, the
 // more the readings will be smoothed, but the slower the output will respond to
