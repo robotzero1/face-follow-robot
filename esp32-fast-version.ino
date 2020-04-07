@@ -3,9 +3,6 @@
 #include "fb_gfx.h"
 #include "fd_forward.h"
 
-int pan_center = 90; // center the pan servo
-int tilt_center = 90; // center the tilt servo
-
 // for averaging the distance result
 // Define the number of samples to keep track of. The higher the number, the
 // more the readings will be smoothed, but the slower the output will respond to
@@ -17,7 +14,6 @@ int total = 0;                  // the running total
 int smoothed_face_height = 30;                // the average
 int face_distance;
 
-//#define CAMERA_MODEL_ESP_EYE
 #define CAMERA_MODEL_AI_THINKER
 #include "camera_pins.h"
 
