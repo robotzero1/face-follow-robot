@@ -1,4 +1,4 @@
-# ESP32-CAM and Elegoo Tumbller face following robot
+# ESP32-CAM and Elegoo Tumbller Face Following Robot
 
 Face tracking robot that follow a persons face. Uses the ESP-FACE libraries on an ESP32-CAM to detect a face and measure distance and location of the face. Data is then sent to an Arduino Nano to control speed and direction of the robot.
 
